@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            color: blue;
+
+        }
+
+        .error>p {
+            text-decoration: line-through;
+        }
+
+        /* 자손 선택자 */
+        .error p {
+            border: 2px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, illo id itaque suscipit eos sit nam natus aperiam repudiandae, maxime neque debitis voluptate, iure iusto. Maxime obcaecati qui perspiciatis saepe?
+            </p>
+        </div>
+    </div>
+    <div class="note error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis saepe minima. Molestiae laudantium quia mollitia error omnis, neque nam voluptates ab soluta quidem corrupti minima, nemo ullam, repellendus facere?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
