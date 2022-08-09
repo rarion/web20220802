@@ -8,11 +8,18 @@
         .fire{
             text-decoration: underline;
         }
+        
         /*id 선택자*/
         /* id 속성(attribute)으로 요소 선택 */
+        /* id 속성 값은 같은 페이지 내에서 
+        서로 다른 요소가 같은 값을 가질 수 없음 */
         #head1{
             background-color: yellow;
         }
+        #head{
+            border: 5px solid;
+        }
+    
     </style>
 </head>
 <body>
@@ -20,7 +27,7 @@
     <h1 class="fire">Lorem, ipsum.</h1>
     <h1 class="fire">Quia, porro.</h1>
     <h1 id="head1">Error, nihil!</h1>
-    <h1>Dolorum, quibusdam.</h1>
+    <h1 id="head2">Dolorum, quibusdam.</h1>
     <h1>Velit, harum?</h1>
     <h1>Maxime, assumenda?</h1>
     <h1>Officia, reiciendis?</h1>
