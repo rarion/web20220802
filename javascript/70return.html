@@ -7,49 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script>
-
-    let ask = prompt("홀짝을 고르세요");
-    let random = parseInt(Math.random() *10);
-    if (random%2!=0){
-        odd();
-        console.log(odd());   
-    }
-    if (random%2==0){
-        even();
-        console.log(even());   
-    }
-
-    function odd(ask) {
-        while(random=="홀"){
-            if (ask == "홀"){
-                alert("맞췄습니다");
-                return "손" ;
-            }
-            else {
-                alert("틀렸습니다")
-                return "익";
-            }   
-        }
-    }
-    function even(ask) {
-        while(random=="짝"){
-            if (ask=="짝"){
-                alert("맞췄습니다");
-                return "손" ;
-            }
-            else {
-                alert("틀렸습니다")
-                return "익";
-            }
-            
-        }
+    function myfunc() {
         
+        console.log("함수가 어떤 일을 한다");
+
+        return 99;
     }
 
+    myfunc1();
+    myfunc1();
 
-
+    console.log(a);
+    console.log(b);
     </script>
 </body>
 </html>

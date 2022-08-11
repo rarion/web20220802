@@ -7,48 +7,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script>
+    let a = [3, 5, 10, 2, 1, 7, 5, 6];
+    let b = [100, 200, 33, 22, 33, 11, 22];
 
-    let ask = prompt("홀짝을 고르세요");
-    let random = parseInt(Math.random() *10);
-    if (random%2!=0){
-        odd();
-        console.log(odd());   
-    }
-    if (random%2==0){
-        even();
-        console.log(even());   
-    }
+    // 두 배열이 가진 모든 값의 합을 구해서 출력
 
-    function odd(ask) {
-        while(random=="홀"){
-            if (ask == "홀"){
-                alert("맞췄습니다");
-                return "손" ;
-            }
-            else {
-                alert("틀렸습니다")
-                return "익";
-            }   
-        }
+    let sum = 0;
+
+    for(i=0; i<a.length; i++){
+        sum += a[i];
     }
-    function even(ask) {
-        while(random=="짝"){
-            if (ask=="짝"){
-                alert("맞췄습니다");
-                return "손" ;
-            }
-            else {
-                alert("틀렸습니다")
-                return "익";
-            }
-            
-        }
-        
+    for (i=0; i<b.length; i++){
+        sum += b[i];
     }
 
-
+    console.log("총합", sum);
+    console.log("평균", sum / (a.length + b.length));
 
     </script>
 </body>
